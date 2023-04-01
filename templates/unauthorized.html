@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="box">
+    {%  with messages = get_flashed_messages() %}
+        {% if messages %}
+                <h1>{{ messages[0] }}</h1>
+                <p>{{ messages[1] }}</p>
+        {% endif %}
+    {% endwith %}
+    
+    <h1>Login</h1>
+
+    <form name='loginform' action="{{ url_for('login') }}" method="post">
+        <input type="text" name="email" placeholder="Email" required="required"/>
+        <input type="password" name="password" placeholder="Password" required="required"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+    </form>
+    
+</div>
+
+{% endblock %}

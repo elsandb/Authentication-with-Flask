@@ -1,0 +1,18 @@
+# By default, Flask-Login uses sessions for authentication --> must set the secret key on your application.
+# Generate a good secret key: https://flask.palletsprojects.com/en/2.2.x/quickstart/#sessions
+_______
+# Flask-Login: https://flask-login.readthedocs.io/en/latest
+
+# Login manager from Flask-Login.
+"The login manager contains the code that lets your application and Flask-Login work together,
+such as how to load a user from an ID, where to send users when they need to log in, and the like."
+
+# LoginManager.user_loader: https://flask-login.readthedocs.io/en/latest/#flask_login.LoginManager.user_loader
+
+# UserMixin provides default implementations for the attributes and methods that Flask-Login
+expects user objects to have. https://flask-login.readthedocs.io/en/latest/#flask_login.UserMixin
+_______
+# Generate password hash: https://werkzeug.palletsprojects.com/en/2.2.x/utils/#module-werkzeug.security
+______
+
+
